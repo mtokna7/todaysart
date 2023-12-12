@@ -1,16 +1,26 @@
-<button class="btn btn-accent text-4xl mt-10 ml-10"><%= link_to 'click! 本日のアート', '#' %></button>
-<p class="ml-11">※読み込み時間かかる</p>
+<div style="height: 800px; background-image: url(<%= asset_path 'building2.jpg' %>); background-size: cover; background-position: center;">
+  <button class="btn text-4xl mt-10 ml-10 text-rose-900"><%= link_to 'click! 本日のアート', '#' %></button>
+  <p class="ml-11">※読み込み時間かかる</p>
 
-<%# スライダー %>
-<div class="row">
-  <h3>スライダー</h3>
-  <div class="autoplay-slider">
-    <div class="slide"><span><%= image_tag("watch.webp") %></span></div>
-    <div class="slide"><span><%= image_tag("woman2.webp") %></span></div>
-    <div class="slide"><span><%= image_tag("woman3.webp") %></span></div>
-    <div class="slide"><span><%= image_tag("woman1.webp") %></span></div>
-    <div class="slide"><span><%= image_tag("japan1.webp") %></span></div>
-    <div class="slide"><span><%= image_tag("goods1.webp") %></span></div>
-    <div class="slide"><span><%= image_tag("japan2.webp") %></span></div>
+  <%# スライダー %>
+  <div class="row">
+    <h3>スライダー</h3>
+    <div class="autoplay-slider">
+      <div class="slide"><span><%= image_tag("watch.webp") %></span></div>
+      <div class="slide"><span><%= image_tag("woman2.webp") %></span></div>
+      <div class="slide"><span><%= image_tag("people1.jpg") %></span></div>
+      <div class="slide"><span><%= image_tag("woman3.webp") %></span></div>
+      <div class="slide"><span><%= image_tag("woman1.webp") %></span></div>
+      <div class="slide"><span><%= image_tag("woman4.jpg") %></span></div>
+      <div class="slide"><span><%= image_tag("japan1.webp") %></span></div>
+      <div class="slide"><span><%= image_tag("goods1.webp") %></span></div>
+      <div class="slide"><span><%= image_tag("japan2.webp") %></span></div>
+    </div>
   </div>
 </div>
+
+
+
+  <script>window.addEventListener('scroll', function(e) {
+    window.scrollTo(0, window.scrollY);
+  });</script>
