@@ -1,5 +1,5 @@
 <div style="height: 1000px; background-image: url(<%= asset_path 'buildings.webp' %>); background-size: cover; background-position: center;">
-  <div class="button mt-10 ml-10"><%= link_to 'click! アートを観に行く', random_artwork_path %></div>
+  <%= link_to 'click! アートを観に行く', random_artwork_path, class: 'button mt-10 ml-10' %>
   <p class="ml-11 text-gray-400">※クリックしてから表示まで最大20秒。。。</p>
 
   <%# スライダー %>
@@ -21,3 +21,4 @@
   <script>window.addEventListener('scroll', function(e) {
     window.scrollTo(0, window.scrollY);
   });</script>
+
