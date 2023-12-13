@@ -26,3 +26,9 @@
     align-items: center;
     justify-content: center;
 }
+
+.responsive-image {
+  width: 400px; /* 幅を400pxに設定 */
+  height: auto; /* 高さを自動調整 */
+  max-height: 300px; /* 最大の高さを300pxに設定 */
+}
