@@ -18,7 +18,7 @@ class ArtworksController < ApplicationController
       object_response = HTTParty.get("https://collectionapi.metmuseum.org/public/collection/v1/objects/#{random_object_id}")
       object_data = JSON.parse(object_response.body)
 
-      if object_data['primaryImage'].present? && object_data['artistDisplayName'].present?
+      if object_data['artistDisplayName'].present? && object_data['primaryImage'].present?
         return object_data
       end
     end
