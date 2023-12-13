@@ -1,0 +1,14 @@
+<button class="btn btn-accent text-4xl px-3 py-2 ml-3"><%= link_to '本日のアート', random_artwork_path %></button>
+
+<%= image_tag @artwork['primaryImage'], alt: @artwork['title'], width: 300 %>
+<% if @artwork['artistDisplayName'].blank? %>
+<h2>作品名：作品情報なし</h2>
+<% else %>
+<h2>作品名：<%= @artwork['title'] %></h2>
+<% end %>
+
+<% if @artwork['artistDisplayName'].blank? %>
+<p>作者: 作者情報なし</p>
+<% else %>
+<p>作者: <%= @artwork['artistDisplayName'] %></p>
+<% end %>
