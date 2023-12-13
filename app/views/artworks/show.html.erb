@@ -1,8 +1,9 @@
 <div style="height: 1100px; background-image: url(<%= asset_path 'buildings.webp' %>); background-size: cover; background-position: center;">
   <div class="centered-content">
     <h1 class="text-gray-400 mt-10 lg:text-5xl mb-5">今日のアート</h1>
-
     <%= image_tag @artwork['primaryImage'], alt: @artwork['title'], width: 400 %>
+  </div>
+  <div class="centered-content bg-gray-900">
     <% if @artwork['artistDisplayName'].blank? %>
     <h2 class="text-gray-400 mt-3">作品名：作品情報なし</h2>
     <% else %>
