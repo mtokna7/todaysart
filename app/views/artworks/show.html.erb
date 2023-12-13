@@ -1,4 +1,4 @@
-<div style="height: 800px; background-image: url(<%= asset_path 'buildings.webp' %>); background-size: cover; background-position: center;">
+<div style="height: 1100px; background-image: url(<%= asset_path 'buildings.webp' %>); background-size: cover; background-position: center;">
   <div class="centered-content">
     <h1 class="text-gray-400 mt-10 lg:text-5xl mb-5">今日のアート</h1>
 
@@ -8,9 +8,7 @@
     <% else %>
     <h2 class="text-gray-400 mt-3">作品名：<%= @artwork['title'] %></h2>
     <% end %>
-
     <h2 class="text-gray-400">作者: <%= @artwork['artistDisplayName'] %></h2>
-
-    <h1 class="text-gray-400 font-extrabold mt-5"><%= link_to 'トップページに戻る', root_path %></h1>
+    <h1 class="text-gray-400 font-extrabold mt-5 mb-5"><%= link_to 'トップページに戻る', root_path %></h1>
   </div>
 </div>
