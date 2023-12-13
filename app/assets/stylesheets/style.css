@@ -26,3 +26,20 @@
     align-items: center;
     justify-content: center;
 }
+
+.button {
+  display: inline-block;
+  background-color: #670024; /* ボタンの背景色 */
+  color: #ffffff; /* テキストの色 */
+  padding: 10px 20px; /* 上下と左右のパディング */
+  text-align: center;
+  text-decoration: none; /* アンダーラインを消す */
+  border: none; /* 枠線を消す */
+  border-radius: 5px; /* 角の丸み */
+  font-size: 16px; /* フォントサイズ */
+  cursor: pointer; /* マウスカーソルをポインタに */
+}
+
+.button:hover {
+  background-color: #b04c3d; /* ホバー時の背景色 */
+}
