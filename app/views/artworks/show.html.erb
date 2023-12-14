@@ -4,12 +4,16 @@
     <%= image_tag @artwork['primaryImage'], alt: @artwork['title'], width: 400 %>
   </div>
   <div class="centered-content bg-gray-900">
-    <% if @artwork['artistDisplayName'].blank? %>
-    <h2 class="text-gray-400 mt-3">作品名：作品情報なし</h2>
+    <% if @artwork['title'].blank? %>
+      <h2 class="text-gray-400 mt-3">作品名：作品情報なし</h2>
     <% else %>
-    <h2 class="text-gray-400 mt-3">作品名：<%= @artwork['title'] %></h2>
+      <h2 class="text-gray-400 mt-3">作品名：<%= @artwork['title'] %></h2>
     <% end %>
-    <h2 class="text-gray-400">作者: <%= @artwork['artistDisplayName'] %></h2>
+    <% if @artwork['artistDisplayName'].blank? %>
+      <h2 class="text-gray-400 mt-3">作者：作者情報なし</h2>
+    <% else %>
+      <h2 class="text-gray-400 mt-3">作者：<%= @artwork['artistDisplayName'] %></h2>
+    <% end %>
     <h1 class="text-gray-400 font-extrabold mt-5 mb-5"><%= link_to 'トップページに戻る', root_path %></h1>
   </div>
 </div>
