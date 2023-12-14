@@ -14,6 +14,7 @@ class ArtworksController < ApplicationController
     data = JSON.parse(response.body)
 
     loop do
+      sleep 0.0125
       random_object_id = data['objectIDs'].sample
       object_response = HTTParty.get("https://collectionapi.metmuseum.org/public/collection/v1/objects/#{random_object_id}")
       object_data = JSON.parse(object_response.body)
